@@ -1,0 +1,1 @@
+A ZIP három fájlját (index.html, styles.css, script.js) töltsd fel a GitHub-adattár főkönyvtárába. A ZIP-fájlt magát NE töltsd fel. A GitHubon a böngésző automatikus fordítását kapcsold ki. A frissítés után nyisd meg a GitHub Pages weboldalt, és szükség esetén frissítsd a gyorsítótárat.
