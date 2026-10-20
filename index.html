@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Q-Field Cosmological Model</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>The Q-Field Cosmological Model</h1>
+    <p>
+      Kétnyelvű, témaváltható webes bemutató a Q-field tanulmányhoz.  
+      Bilingual, theme-switchable web presentation for the Q-field study.
+    </p>
+    <div class="controls">
+      <div>
+        <label>Nyelv<br><span>Language</span></label>
+        <select id="lang">
+          <option value="hu">Magyar</option>
+          <option value="en">English</option>
+        </select>
+      </div>
+      <div>
+        <label>Téma<br><span>Theme</span></label>
+        <select id="theme">
+          <option value="dark">Sötét / Dark</option>
+          <option value="light">Világos / Light</option>
+        </select>
+      </div>
+      <div>
+        <label>Kiemelés<br><span>Accent</span></label>
+        <select id="accent">
+          <option value="blue">Blue</option>
+          <option value="teal">Teal</option>
+          <option value="violet">Violet</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <h3>Fejezetek<br><span>Chapters</span></h3>
+    <a href="#motivation">1 Motiváció<br><span>1 Motivation</span></a>
+    <a href="#definition">2 A Q-mező definíciója<br><span>2 Definition of the Q-Field</span></a>
+    <a href="#micro">3 Mikroszkopikus kvantumszerkezet<br><span>3 Microscopic Quantum Structure</span></a>
+    <a href="#particles">4 Részecskeképződés<br><span>4 Particle Formation</span></a>
+    <a href="#filaments">5–10 Energiacsatornák, filamentumok...<br><span>5–10 Energy Channels, Filaments...</span></a>
+    <a href="#gravity">11–16 Kapcsolat a gravitációval...<br><span>11–16 Relation to Gravity...</span></a>
+    <a href="#redshift">17 A fotonenergia fejlődése...<br><span>17 Photon Energy Evolution...</span></a>
+    <a href="#equation">21–23 Az univerzális Q-mező egyenlet...<br><span>21–23 Universal Q-Field Equation...</span></a>
+    <a href="#appendix-a">A függelék: A Q-mező mértékegységrendszere<br><span>Appendix A: The Unit System of the Q-Field</span></a>
+    <a href="#appendix-b">B függelék: Példaszámítások<br><span>Appendix B: Example Calculations</span></a>
+    <a href="#conclusion">24 Következtetés<br><span>24 Conclusion</span></a>
+  </nav>
+
+  <main>
+    <section id="overview">
+      <h2>Interaktív áttekintés<br><span>Interactive overview</span></h2>
+      <p>
+        A weboldal magyar és angol nézettel működik. Sötét/világos mód, kiemelőszín váltás, és accordion funkcióval.  
+        The site supports Hungarian and English views. Dark/light mode, accent color switching, and accordion functionality.
+      </p>
+      <div class="buttons">
+        <button id="openAll">Összes megnyitása / Open all</button>
+        <button id="closeAll">Összes bezárása / Close all</button>
+      </div>
+    </section>
+
+<section id="personal-introduction">
+  <h2>
+    Hogyan született meg a Q-mező gondolata?
+    <br>
+    <span>How the Idea of the Q-Field Was Born</span>
+  </h2>
+
+  <div class="hu">
+    <h3>Az elmélet megszületésének személyes története</h3>
+
+    <p>A Q-mező elmélete nem egy előre meghatározott
+    tudományos modell kidolgozásával kezdődött.
+    Sokkal inkább egy kérdéssel: vajon valóban értjük-e,
+    hogy mi a tér, az idő és a gravitáció, vagy csupán
+    rendkívüli pontossággal írjuk le a működésüket?</p>
+
+    <p>A kvantumfizika bizonyos jelenségeit könnyebben
+    el tudtam képzelni, mint az általános relativitáselmélet
+    néhány következményét.</p>
+
+    <p>Az igazi gondolati fordulópontot a gravitáció
+    és az idő kapcsolata jelentette. A gravitációs tér
+    hatással van az órák járására. Ez nem ellentmondás
+    a relativitáselméletben, bennem mégis felvetette
+    a kérdést: mi van akkor, ha a tér, az idő és
+    a gravitáció ugyanannak a mélyebb fizikai
+    rendszernek különböző megnyilvánulásai?</p>
+
+    <p>Innen indult el a gondolat, hogy létezhet egy
+    alapvető mező, amelynek állapotai és változásai
+    hozzák létre azokat a jelenségeket, amelyeket
+    térként, időként, gravitációként és anyagként
+    érzékelünk.</p>
+
+    <p>Ezt a feltételezett rendszert neveztem el
+    <strong>Q-mezőnek.</strong></p>
+
+    <p>Kezdetben energiamezőként gondoltam rá.
+    Később azonban felmerült, hogy talán nem maga
+    az energia vagy az anyag terjed ebben a rendszerben,
+    hanem a fizikai állapotokat és azok változásait
+    meghatározó információ.</p>
+
+    <p>Ebben az elképzelésben a fénysebesség
+    a Q-mező állapotváltozásainak terjedési
+    határsebességével is kapcsolatban állhat.</p>
+
+    <p>Ezek egyelőre hipotézisek, nem bizonyított
+    fizikai állítások. A cél annak vizsgálata,
+    hogy lehetséges-e egy egységesebb leírás,
+    amely összeegyeztethető a megfigyelésekkel,
+    és ellenőrizhető következtetésekhez vezet.</p>
+  </div>
+
+  <div class="en">
+    <h3>The Personal Origins of the Theory</h3>
+
+    <p>The Q-field theory did not begin as a
+    predetermined scientific model. It began
+    with a question: do we truly understand
+    what space, time and gravity are, or do
+    we describe their behavior with extraordinary
+    precision?</p>
+
+    <p>I found certain aspects of quantum physics
+    easier to imagine than some of the consequences
+    of general relativity.</p>
+
+    <p>The turning point was the relationship
+    between gravity and time. Gravitational fields
+    affect the rates of clocks. Although this
+    is not a contradiction within relativity,
+    it led me to ask whether space, time and
+    gravity might be different manifestations
+    of a deeper physical system.</p>
+
+    <p>This led to the idea of a fundamental
+    field whose states and changes could give
+    rise to the phenomena we perceive as space,
+    time, gravity and matter.</p>
+
+    <p>I called this hypothetical system
+    the <strong>Q-field.</strong></p>
+
+    <p>Initially, I imagined it as an energy field.
+    Later, I considered another possibility:
+    perhaps what propagates through this system
+    is not matter or energy itself, but information
+    defining physical states and their changes.</p>
+
+    <p>In this interpretation, the speed of light
+    might be related to the limiting propagation
+    speed of Q-field state changes.</p>
+
+    <p>These ideas remain hypotheses rather than
+    established physical claims. The goal is to
+    investigate whether a more unified description
+    can be developed that is consistent with
+    observations and leads to testable predictions.</p>
+  </div>
+</section>
+
+    <section class="chapter" id="motivation">
+      <h2>1 Motiváció<br><span>1 Motivation</span></h2>
+      <div class="chapter-preview">
+        <p class="hu">A modern kozmológia számos asztrofizikai megfigyelést a ΛCDM modellel magyaráz. Ebben a keretben az univerzum anyagának nagy része sötét anyagként szerepel, vagyis olyan hipotetikus anyagkén...</p>
+        <p class="en">Modern cosmology explains many astrophysical observations using the ΛCDM model. In this framework most of the matter in the universe is assumed to be dark matter, a hypothetical form of matt...</p>
+        <button class="expand-btn">Teljes leírás / Full description</button>
+      </div>
+      <div class="chapter-full hu">
+        <pre>A modern kozmológia számos asztrofizikai megfigyelést a ΛCDM modellel magyaráz. Ebben a keretben az univerzum anyagának nagy része sötét anyagként szerepel, vagyis olyan hipotetikus anyagként, amely gravitációsan kölcsönhat, de elektromágnesesen nem.
+
+Bár ez a modell sok megfigyelést sikeresen leír, a sötét anyag fizikai természete továbbra sem ismert, és közvetlen kimutatása mindeddig nem történt meg.
+
+Olyan megfigyelések, mint a galaxishalmaz-ütközésekben látható gravitációs lencsézés — ideértve a Bullet Clusterhez hasonló rendszereket — arra utalnak, hogy a gravitációs központok térben elválhatnak a látható barionos anyagtól.
+
+E munka motivációja az a lehetőség volt, hogy ezek a jelenségek nem láthatatlan anyagból, hanem magának a térszerkezetnek a változásaiból eredhetnek.
+
+A jelen modell szerint a tér egy folytonos energia-mezőt tartalmaz, amelynek szerkezete meghatározza a gravitációs jelenségeket.
+
+A keretrendszer később azzal a gondolattal bővült, hogy ez a mező nem pusztán passzívan „létezik" a téridőben, hanem szerepet játszhat a gravitációs viselkedés, a nagyléptékű struktúrák, sőt akár a tér- és időrend makroszkopikus fogalmainak hatékony létrehozásában is.</pre>
+      </div>
+      <div class="chapter-full en">
+        <pre>Modern cosmology explains many astrophysical observations using the ΛCDM model. In this framework most of the matter in the universe is assumed to be dark matter, a hypothetical form of matter that interacts gravitationally but not electromagnetically.
+
+Although this model successfully explains many observations, the physical nature of dark matter remains unknown and direct detection has not been achieved.
+
+Observations such as gravitational lensing in galaxy cluster collisions, including systems similar to the Bullet Cluster, suggest gravitational centers that appear spatially separated from visible baryonic matter.
+
+This work was motivated by the possibility that such observations may arise from variations in the structure of space itself rather than from unseen matter.
+
+In the present model, space is assumed to contain a continuous energy field whose structure determines gravitational phenomena.
+
+The framework was later extended by the consideration that the field may not merely reside in spacetime as a passive background, but may instead participate in the effective generation of gravitational behavior, large-scale structure, and possibly even the macroscopic notions of spatial and temporal order themselves.</pre>
+      </div>
+    </section>
+
+    <section class="chapter" id="definition">
+      <h2>2 A Q-mező definíciója<br><span>2 Definition of the Q-Field</span></h2>
+      <div class="chapter-preview">
+        <p class="hu">Bevezetünk egy skalármezőt, amely a vákuum energiasűrűségét írja le: Q(x, t) ahol Q a helyi vákuum-energiasűrűséget jelenti. E mező térbeli görbülete effektív gravitációs viselkedést hoz létre...</p>
+        <p class="en">We introduce a scalar field describing the energy density of the vacuum: Q(x, t) where Q represents the local vacuum energy density. Spatial curvature of this field produces effective gravit...</p>
+        <button class="expand-btn">Teljes leírás / Full description</button>
+      </div>
+      <div class="chapter-full hu">
+        <pre>Bevezetünk egy skalármezőt, amely a vákuum energiasűrűségét írja le:
+
+Q(x, t)
+
+ahol Q a helyi vákuum-energiasűrűséget jelenti.
+
+E mező térbeli görbülete effektív gravitációs viselkedést hoz létre.
+
+Az effektív gravitációs sűrűség felírható így:
+
+ρQ = ∇²Q
+
+Azok a tartományok, ahol a mező görbülete nő, erősebb gravitációs hatásoknak felelnek meg.
+
+A mező egy dinamikusabb alakja a fizikailag szemléletes mennyiség segítségével adható meg:
+
+Q = ρv²
+
+ahol ρ a helyi tömegsűrűség, v pedig a rendszerre jellemző sebességskála.
+
+Ez a mennyiség az anyagmozgáshoz kapcsolódó helyi dinamikai energiasűrűséget reprezentálja.</pre>
+      </div>
+      <div class="chapter-full en">
+        <pre>We introduce a scalar field describing the energy density of the vacuum:
+
+Q(x, t)
+
+where Q represents the local vacuum energy density.
+
+Spatial curvature of this field produces effective gravitational behavior.
+
+The effective gravitational density can be expressed as
+
+ρQ = ∇²Q
+
+Regions where the curvature of the field increases correspond to stronger gravitational effects.
+
+A more dynamical form of the field is introduced through the physically transparent quantity
+
+Q = ρv²
+
+where ρ is the local mass density and v is a characteristic velocity scale of the system.
+
+This quantity represents the local dynamical energy density associated with matter motion.</pre>
+      </div>
+    </section>
+
+    <section class="chapter" id="micro">
+      <h2>3 Mikroszkopikus kvantumszerkezet<br><span>3 Microscopic Quantum Structure</span></h2>
+      <div class="chapter-preview">
+        <p class="hu">Mikroszkopikus skálán a mező olyan fluktuációkat tartalmaz, amelyek a kvantumvákuum ingadozásaihoz hasonlók. A mező felírható így: Q(x, t) = Q0 + δQ ahol Q0 a háttérmezőt, δQ pedig a helyi p...</p>
+        <p class="en">At microscopic scales the field contains fluctuations similar to quantum vacuum fluctuations. The field can be written as Q(x, t) = Q0 + δQ where Q0 represents the background field and δQ re...</p>
+        <button class="expand-btn">Teljes leírás / Full description</button>
+      </div>
+      <div class="chapter-full hu">
+        <pre>Mikroszkopikus skálán a mező olyan fluktuációkat tartalmaz, amelyek a kvantumvákuum ingadozásaihoz hasonlók.
+
+A mező felírható így:
+
+Q(x, t) = Q0 + δQ
+
+ahol Q0 a háttérmezőt, δQ pedig a helyi perturbációkat jelenti.
+
+A lokalizált, stabil perturbációk megfeleltethetők elemi részecskéknek.
+
+Így a részecskék az alapul szolgáló Q-mező gerjesztéseiként értelmezhetők.</pre>
+      </div>
+      <div class="chapter-full en">
+        <pre>At microscopic scales the field contains fluctuations similar to quantum vacuum fluctuations.
+
+The field can be written as
+
+Q(x, t) = Q0 + δQ
+
+where Q0 represents the background field and δQ represents local perturbations.
+
+Localized stable perturbations may correspond to elementary particles.
+
+Thus particles are interpreted as excitations of the underlying Q-field.</pre>
+      </div>
+    </section>
+
+    <section class="chapter" id="particles">
+      <h2>4 Részecskeképződés<br><span>4 Particle Formation</span></h2>
+      <div class="chapter-preview">
+        <p class="hu">A mezőperturbációk által létrehozott energiakoncentrációk stabilizálódhatnak lokalizált struktúrákká. Ezek a lokalizált gerjesztések részecskékként viselkednek, amelyek tulajdonságai a körny...</p>
+        <p class="en">Energy concentrations formed by field perturbations may stabilize into localized structures. These localized excitations behave as particles whose properties depend on the structure of the s...</p>
+        <button class="expand-btn">Teljes leírás / Full description</button>
+      </div>
+      <div class="chapter-full hu">
+        <pre>A mezőperturbációk által létrehozott energiakoncentrációk stabilizálódhatnak lokalizált struktúrákká.
+
+Ezek a lokalizált gerjesztések részecskékként viselkednek, amelyek tulajdonságai a környező mező szerkezetétől függenek.
+
+A részecskekölcsönhatások ezért a mezőgerjesztések kölcsönhatásaiként is értelmezhetők.
+
+Bevezethető egy hasznos küszöbfogalom: Q*.
+
+E kritikus mezőszint fölött a helyi Q-mező szerkezete egyszerű fluktuációs viselkedésből stabil, anyagszerű vagy erősen szervezett fizikai állapotokba mehet át.</pre>
+      </div>
+      <div class="chapter-full en">
+        <pre>Energy concentrations formed by field perturbations may stabilize into localized structures.
+
+These localized excitations behave as particles whose properties depend on the structure of the surrounding field.
+
+Particle interactions can therefore be interpreted as interactions between field excitations.
+
+A useful threshold concept can be introduced: Q*.
+
+Above this critical field level, local Q-field structure may transition from fluctuation behavior to stable matter-like or strongly organized physical states.</pre>
+      </div>
+    </section>
+
+    <section class="chapter" id="filaments">
+      <h2>5–10 Energiacsatornák, filamentumok, csomópontok és BAO<br><span>5–10 Energy Channels, Filaments, Junctions and BAO</span></h2>
+      <div class="chapter-preview">
+        <p class="hu">Ahogy a perturbációk kollektíven kölcsönhatnak, a mezőgrádiensek irányított struktúrákba kezdenek rendeződni. Ezek a gradiensek energiacsatornákat hoznak létre a mezőben, és az anyagképződés...</p>
+        <p class="en">As perturbations interact collectively, field gradients begin to organize into directional structures. These gradients create energy channels within the field, and matter formation tends to ...</p>
+        <button class="expand-btn">Teljes leírás / Full description</button>
+      </div>
+      <div class="chapter-full hu">
+        <pre>Ahogy a perturbációk kollektíven kölcsönhatnak, a mezőgrádiensek irányított struktúrákba kezdenek rendeződni. Ezek a gradiensek energiacsatornákat hoznak létre a mezőben, és az anyagképződés ezek mentén történhet előnyben.
+
+Nagyobb skálán ezek a csatornák filamentumszerű struktúrákká fejlődnek. A filamentumok fokozott mezőgradiensű tartományoknak felelnek meg, F = ∇Q, és irányítják az anyag gravitációs összegyűlését.
+
+Ha a kozmikus filamentumokat a Q-mező energia-szállító csatornáinak tekintjük, akkor metszéspontjaik fluxuscsomópontokként viselkednek. Egy olyan csomópontnál, ahol több filamentum találkozik, a Q-fluxusnak teljesítenie kell a megmaradási feltételt:
+
+∑JQ = 0
+
+Ez az elektromos hálózatok Kirchhoff-törvényéhez hasonló. Ha három filamentum találkozik hasonló fluxusnagyságokkal, a stabil konfiguráció körülbelül 120°-os szögeket hoz létre.
+
+Az így kialakuló nagyléptékű szerkezet hasonlít a megfigyelt kozmikus hálóhoz: a galaxisok filamentumok mentén alakulnak ki, az üregek alacsony gradiensű tartományokban jelennek meg, a galaxishalmazok pedig gyakran a filamentumok metszéseinél jönnek létre.
+
+A keret egy nagyobb, körülbelül 150 Mpc-es jellegzetes skálát is megenged, amely a barionakusztikus oszcilláció (BAO) jellegzetességéhez kapcsolható, és a Q-mező transzportgeometriájának magasabb rendű rezonáns módjaként értelmezhető.</pre>
+      </div>
+      <div class="chapter-full en">
+        <pre>As perturbations interact collectively, field gradients begin to organize into directional structures. These gradients create energy channels within the field, and matter formation tends to occur preferentially along them.
+
+On larger scales, these channels evolve into filament-like structures. Filaments correspond to regions of enhanced field gradient, F = ∇Q, and guide the gravitational aggregation of matter.
+
+If cosmic filaments are interpreted as energy-transport channels of the Q-field, then filament intersections behave as flux nodes. At a junction where several filaments meet, the Q-flux must satisfy a conservation condition:
+
+∑JQ = 0
+
+This is analogous to Kirchhoff's law in electrical networks. When three filaments meet with comparable flux magnitudes, the stable configuration forms approximately 120° angles.
+
+The resulting large-scale structure resembles the observed cosmic web: galaxies form along filaments, voids appear in low-gradient regions, and galaxy clusters tend to arise near filament intersections.
+
+The framework also allows a larger characteristic scale near 150 Mpc, associated with the baryon acoustic oscillation (BAO) feature, to be interpreted as a higher-order resonant mode of the Q-field transport geometry.</pre>
+      </div>
+    </section>
+
+    <section class="chapter" id="gravity">
+      <h2>11–16 Kapcsolat a gravitációval, lencsézéssel és a Bullet Clusterrel<br><span>11–16 Relation to Gravity, Lensing and the Bullet Cluster</span></h2>
+      <div class="chapter-preview">
+        <p class="hu">Az általános relativitáselméletben a gravitációs görbületet Einstein téregyenletei írják le. A Q-mező keretrendszerében az energia-impulzus tenzor tartalmazhat a Q-mezőből származó hozzájárul...</p>
+        <p class="en">In general relativity, gravitational curvature is described by Einstein's field equations. In the Q-field framework, the stress-energy tensor can include contributions from the Q-field itsel...</p>
+        <button class="expand-btn">Teljes leírás / Full description</button>
+      </div>
+      <div class="chapter-full hu">
+        <pre>Az általános relativitáselméletben a gravitációs görbületet Einstein téregyenletei írják le. A Q-mező keretrendszerében az energia-impulzus tenzor tartalmazhat a Q-mezőből származó hozzájárulásokat is, így a mezőszerkezet befolyásolhatja a téridő görbületét.
+
+A modell kiterjesztett változata ennél tovább megy, és azt sugallja, hogy a téridő geometriája nem feltétlenül alapvető entitás, hanem effektív makroszkopikus leírás lehet.
+
+Gyenge mező határesetben az effektív gravitációs gyorsulás közelíthető így:
+
+g_Q = −κ_Q ∇Q
+
+Ez arra utal, hogy a gravitációs vonzás a Q-mező energiasűrűségének térbeli változásaiból emelkedhet ki.
+
+Ugyanez az elképzelés természetes módon kapcsolódik a gravitációs lencsézéshez is: amikor a fény olyan tartományokon halad át, ahol ∇Q ≠ 0, a pályája meggörbülhet.
+
+A galaxisok rotációs görbéit szintén befolyásolhatja, ha az effektív potenciál tartalmaz egy Q-mező tagot:
+
+Φeff = Φgravity + ΦQ
+
+Olyan halmazütközésekben, mint a Bullet Cluster, a lencsézési jel a mező geometriájához igazodhat, nem csak a látható barionos gázhoz, ami alternatív értelmezést kínál a lencsézési térképek és a közönséges anyag közötti megfigyelt elválásra.</pre>
+      </div>
+      <div class="chapter-full en">
+        <pre>In general relativity, gravitational curvature is described by Einstein's field equations. In the Q-field framework, the stress-energy tensor can include contributions from the Q-field itself, allowing field structure to influence spacetime curvature.
+
+The extended version of the model goes further and suggests that spacetime geometry may be an effective macroscopic description rather than a fundamental entity.
+
+In the weak-field limit, effective gravitational acceleration may be approximated by
+
+g⃗ ∝ −∇Q
+
+This suggests that gravitational attraction can emerge from spatial variations in Q-field energy density.
+
+The same idea naturally connects to gravitational lensing: when light travels through regions where ∇Q ≠ 0, its trajectory may curve.
+
+Galaxy rotation curves may also be affected if the effective potential contains a Q-field term:
+
+Φeff = Φgravity + ΦQ
+
+In cluster collisions such as the Bullet Cluster, the lensing signal may remain aligned with field geometry rather than with visible baryonic gas alone, which offers an alternative interpretation of the observed separation between lensing maps and ordinary matter.</pre>
+      </div>
+    </section>
+
+    <section class="chapter" id="redshift">
+      <h2>17 A fotonenergia fejlődése és a vöröseltolódás<br><span>17 Photon Energy Evolution and Redshift</span></h2>
+      <div class="chapter-preview">
+        <p class="hu">A Q-mezőn áthaladó fotonok gyengén kölcsönhatásba léphetnek a mező szerkezetével. Ha a foton energiája így fejlődik: E(t) = E0 e^(−αt) akkor a megfigyelt vöröseltolódás: z = E0 / E(t) − 1 ah...</p>
+        <p class="en">Photons traveling through the Q-field may interact weakly with the field structure. If photon energy evolves according to E(t) = E0 e^(−αt) then the observed redshift becomes z = E0 / E(t) −...</p>
+        <button class="expand-btn">Teljes leírás / Full description</button>
+      </div>
+      <div class="chapter-full hu">
+        <pre>A Q-mezőn áthaladó fotonok gyengén kölcsönhatásba léphetnek a mező szerkezetével.
+
+Ha a foton energiája így fejlődik:
+
+E(t) = E0 e^(−αt)
+
+akkor a megfigyelt vöröseltolódás:
+
+z = E0 / E(t) − 1
+
+ahol α a fotonok és a Q-mező közötti kölcsönhatás erősségét jelenti.
+
+Ez a mechanizmus hozzájárulhat a kozmológiai vöröseltolódáshoz, és indokolttá teszi a standard Hubble-féle hígulási tag újragondolását a teljes Q-mező egyenletben.</pre>
+      </div>
+      <div class="chapter-full en">
+        <pre>Photons traveling through the Q-field may interact weakly with the field structure.
+
+If photon energy evolves according to
+
+E(t) = E0 e^(−αt)
+
+then the observed redshift becomes
+
+z = E0 / E(t) − 1
+
+where α represents the interaction strength between photons and the Q-field.
+
+This mechanism may contribute to cosmological redshift and motivates reconsidering the standard Hubble dilution term in the universal Q-field equation.</pre>
+      </div>
+    </section>
+
+    <section class="chapter" id="equation">
+      <h2>21–23 Az univerzális Q-mező egyenlet és bontása<br><span>21–23 Universal Q-Field Equation and Its Decomposition</span></h2>
+      <div class="chapter-preview">
+        <p class="hu">A keretrendszer központi gondolata az, hogy egyetlen végső egyenlet leírhat folyamatokat az univerzum teljes hierarchiáján keresztül, a mikroszkopikus sűrűségszerkezettől a legnagyobb kozmol...</p>
+        <p class="en">A central idea of the framework is that one final equation can describe processes across the full hierarchy of the universe, from microscopic density structure to the largest cosmological sc...</p>
+        <button class="expand-btn">Teljes leírás / Full description</button>
+      </div>
+      <div class="chapter-full hu">
+        <pre>A keretrendszer központi gondolata az, hogy egyetlen végső egyenlet leírhat folyamatokat az univerzum teljes hierarchiáján keresztül, a mikroszkopikus sűrűségszerkezettől a legnagyobb kozmológiai skálákig.
+
+Korábbi alak:
+
+∂Q/∂t + 3HQ + ∇·(−DQ∇Q) = ρv² + ε[(∇ρ)²/ρ* + upl + uem]
+
+A kiterjesztett értelmezésben a 3HQ Hubble-tag újragondolásra kerül, és helyét egy effektív Q-mező torzulási tag veszi át:
+
+ΞQQ
+
+így a módosított egyenlet:
+
+∂Q/∂t + ΞQQ + ∇·(−DQ∇Q) = ρv² + ε[(∇ρ)²/ρ* + upl + uem]
+
+A tagok jelentése hierarchikus:
+• ∂Q/∂t : a mező időbeli fejlődése
+• ΞQQ : nagyléptékű Q-mező torzulás
+• ∇·(−DQ∇Q) : transzport és filamentáris szerveződés
+• ρv² : galaktikus és halmazdinamika
+• (∇ρ)²/ρ* : mikroszkopikus szerkezet és részecskeképződés
+• upl : plazmadominált környezetek
+• uem : elektromágneses és sugárzási környezetek
+
+Ebben az értelemben az egyenlet nem csupán formula, hanem egy térkép, amely összekapcsolja a mikroszkopikus kvantumszerkezetet, a plazmafizikát, a galaktikus dinamikát, a kozmikus filamentumokat és az effektív kozmológiai fejlődést.</pre>
+      </div>
+      <div class="chapter-full en">
+        <pre>A central idea of the framework is that one final equation can describe processes across the full hierarchy of the universe, from microscopic density structure to the largest cosmological scales.
+
+Earlier form:
+
+∂Q/∂t + 3HQ + ∇·(−DQ∇Q) = ρv² + ε[(∇ρ)²/ρ* + upl + uem]
+
+In the extended interpretation, the Hubble term 3HQ is reconsidered and replaced by an effective Q-field distortion term:
+
+ΞQQ
+
+giving the modified equation
+
+∂Q/∂t + ΞQQ + ∇·(−DQ∇Q) = ρv² + ε[(∇ρ)²/ρ* + upl + uem]
+
+The meaning of the terms is hierarchical:
+• ∂Q/∂t : temporal evolution of the field
+• ΞQQ : large-scale Q-field distortion
+• ∇·(−DQ∇Q) : transport and filamentary organization
+• ρv² : galactic and cluster dynamics
+• (∇ρ)²/ρ* : microscopic structure and particle formation
+• upl : plasma-dominated environments
+• uem : electromagnetic and radiative environments
+
+In this sense, the equation functions not just as a formula but as a map linking microscopic quantum structure, plasma physics, galactic dynamics, cosmic filaments and effective cosmological evolution.</pre>
+      </div>
+    </section>
+
+    <section class="chapter" id="appendix-a">
+      <h2>A függelék: A Q-mező mértékegységrendszere<br><span>Appendix A: The Unit System of the Q-Field</span></h2>
+      <div class="chapter-preview">
+        <p class="hu">A Q-mező elmélet gyakorlati alkalmazhatóságához bevezethető egy külön mértékegységrendszer. Az alapmennyiség: Q = ρv² Mivel ρ tömegsűrűség, v pedig sebesség, ezért Q dimenziója energiasűrűsé...</p>
+        <p class="en">To make the Q-field theory practically applicable, a dedicated unit system can be introduced. The fundamental quantity is Q = ρv² Since ρ is mass density and v is velocity, the dimension of ...</p>
+        <button class="expand-btn">Teljes leírás / Full description</button>
+      </div>
+      <div class="chapter-full hu">
+        <pre>A Q-mező elmélet gyakorlati alkalmazhatóságához bevezethető egy külön mértékegységrendszer.
+
+Az alapmennyiség:
+
+Q = ρv²
+
+Mivel ρ tömegsűrűség, v pedig sebesség, ezért Q dimenziója energiasűrűség:
+
+[Q] = J/m³
+
+Alapegység:
+
+1 Qe = 1 J/m³
+
+Nagyobb skálájú egység:
+
+1 QQ = 10⁶ Qe
+
+Bevezethető egy kicsi háttér-alapérték:
+
+Q0 ~ 10⁻¹⁵ Qe
+
+Definiálható egy kritikus küszöb is:
+
+Q* ~ 10⁻¹² Qe
+
+Hasznos kontrasztmérték:
+
+ΔQ = (Q − Q0) / Q0
+
+amely megmutatja, hogy egy adott tartomány mennyire tér el a háttérmezőtől.</pre>
+      </div>
+      <div class="chapter-full en">
+        <pre>To make the Q-field theory practically applicable, a dedicated unit system can be introduced.
+
+The fundamental quantity is
+
+Q = ρv²
+
+Since ρ is mass density and v is velocity, the dimension of Q is an energy density:
+
+[Q] = J/m³
+
+Base unit:
+
+1 Qe = 1 J/m³
+
+Larger-scale unit:
+
+1 QQ = 10⁶ Qe
+
+A small baseline background field may be introduced:
+
+Q0 ~ 10⁻¹⁵ Qe
+
+A critical threshold may be defined as:
+
+Q* ~ 10⁻¹² Qe
+
+A useful contrast measure is
+
+ΔQ = (Q − Q0) / Q0
+
+which indicates how strongly a given region deviates from the background field.</pre>
+      </div>
+    </section>
+
+    <section class="chapter" id="appendix-b">
+      <h2>B függelék: Példaszámítások<br><span>Appendix B: Example Calculations</span></h2>
+      <div class="chapter-preview">
+        <p class="hu">A Q-mező modell egyik legerősebb oldala, hogy ugyanaz az alapreláció sok különböző skálán alkalmazható: Q = ρv² Példarendek nagyságrendben: • mikroszkopikus tartomány: Qμ = 10⁻¹⁰ Qe • plazma...</p>
+        <p class="en">One of the strongest aspects of the Q-field model is that the same basic relation can be applied across many scales: Q = ρv² Example orders of magnitude: • microscopic domain: Qμ = 10⁻¹⁰ Qe ...</p>
+        <button class="expand-btn">Teljes leírás / Full description</button>
+      </div>
+      <div class="chapter-full hu">
+        <pre>A Q-mező modell egyik legerősebb oldala, hogy ugyanaz az alapreláció sok különböző skálán alkalmazható:
+
+Q = ρv²
+
+Példarendek nagyságrendben:
+• mikroszkopikus tartomány: Qμ = 10⁻¹⁰ Qe
+• plazmatartomány: Qpl = 10⁻¹⁰ Qe
+• galaktikus skála: Qg = 4 × 10⁻¹¹ Qe
+• filamentum-skála: Qf = 10⁻¹³ Qe
+
+Galaxishalmazokra a becslések jóval nagyobbak:
+• Abell 520: Q ≈ 8.1 × 10⁻¹² – 8.1 × 10⁻¹¹ Qe
+• El Gordo: Q ≈ 1.5 × 10⁻¹¹ – 1.5 × 10⁻¹⁰ Qe
+• Bullet Cluster: Q ≈ 3.4 × 10⁻¹¹ – 3.4 × 10⁻¹⁰ Qe
+
+Ez a folytonosság egy skálaláncra utal:
+mikroszkopikus gerjesztések → plazmakörnyezetek → galaktikus dinamika → filamentáris transzport → halmazcsomópontok → nagyléptékű kozmikus szerveződés.</pre>
+      </div>
+      <div class="chapter-full en">
+        <pre>One of the strongest aspects of the Q-field model is that the same basic relation can be applied across many scales:
+
+Q = ρv²
+
+Example orders of magnitude:
+• microscopic domain: Qμ = 10⁻¹⁰ Qe
+• plasma domain: Qpl = 10⁻¹⁰ Qe
+• galactic scale: Qg = 4 × 10⁻¹¹ Qe
+• filament scale: Qf = 10⁻¹³ Qe
+
+For galaxy clusters the estimates become much larger:
+• Abell 520: Q ≈ 8.1 × 10⁻¹² – 8.1 × 10⁻¹¹ Qe
+• El Gordo: Q ≈ 1.5 × 10⁻¹¹ – 1.5 × 10⁻¹⁰ Qe
+• Bullet Cluster: Q ≈ 3.4 × 10⁻¹¹ – 3.4 × 10⁻¹⁰ Qe
+
+This continuity suggests a scale chain:
+microscopic excitations → plasma environments → galactic dynamics → filamentary transport → cluster nodes → large-scale cosmic organization.</pre>
+      </div>
+    </section>
+
+    <section class="chapter" id="conclusion">
+      <h2>24 Következtetés<br><span>24 Conclusion</span></h2>
+      <div class="chapter-preview">
+        <p class="hu">Ez a tanulmány egy olyan kozmológiai keretrendszert javasol, amelyben az univerzum szerkezetét egy folytonos kvantummező határozza meg. A mező mikroszkopikus fluktuációi mezoszkopikus energi...</p>
+        <p class="en">This study proposes a cosmological framework in which the universe is structured by a continuous quantum field. Microscopic fluctuations of the field evolve into mesoscopic energy channels a...</p>
+        <button class="expand-btn">Teljes leírás / Full description</button>
+      </div>
+      <div class="chapter-full hu">
+        <pre>Ez a tanulmány egy olyan kozmológiai keretrendszert javasol, amelyben az univerzum szerkezetét egy folytonos kvantummező határozza meg.
+
+A mező mikroszkopikus fluktuációi mezoszkopikus energiacsatornákká, végül kozmikus léptékű filamenthálózattá fejlődnek.
+
+Kiterjesztett formájában a modell azt sugallja, hogy a gravitáció és a téridő geometriája a Q-mező szerveződésének emergens következménye lehet, nem pedig alapvető kiindulópont.
+
+A standard Hubble-tágulási tag helyettesítése egy Q-mező torzulási taggal mezőalapú magyarázatot ad a nagyléptékű effektív fejlődésre.
+
+A keret alternatív nézőpontot kínál a gravitációs jelenségek, a vöröseltolódás és a nagyléptékű struktúraképződés értelmezéséhez.</pre>
+      </div>
+      <div class="chapter-full en">
+        <pre>This study proposes a cosmological framework in which the universe is structured by a continuous quantum field.
+
+Microscopic fluctuations of the field evolve into mesoscopic energy channels and finally into cosmic-scale filament networks.
+
+In its extended form, the model suggests that gravity and spacetime geometry may be emergent consequences of Q-field organization rather than fundamental starting points.
+
+Replacing the standard Hubble expansion term by a Q-field distortion term provides a field-based explanation for large-scale effective evolution.
+
+The framework offers an alternative perspective for understanding gravitational phenomena, redshift and large-scale structure formation.</pre>
+      </div>
+    </section>
+
+    <footer>
+      Forrás: a feltöltött PDF alapján készített, kreatívabb kétnyelvű webes változat.<br>
+      Source: a more creative bilingual web adaptation based on the uploaded PDF.
+    </footer>
+  </main>
+</body>
+</html>
